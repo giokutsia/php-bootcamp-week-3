@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.0
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 12, 2022 at 10:39 AM
--- Server version: 10.4.24-MariaDB
--- PHP Version: 8.1.6
+-- Generation Time: Aug 13, 2022 at 12:59 AM
+-- Server version: 10.4.11-MariaDB
+-- PHP Version: 7.4.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -32,16 +32,8 @@ CREATE TABLE `countries` (
   `name` varchar(512) COLLATE utf32_unicode_ci NOT NULL,
   `region` varchar(512) COLLATE utf32_unicode_ci NOT NULL,
   `flag` varchar(512) COLLATE utf32_unicode_ci NOT NULL,
-  `population` varchar(512) COLLATE utf32_unicode_ci NOT NULL,
-  `language` varchar(512) COLLATE utf32_unicode_ci NOT NULL
+  `population` varchar(512) COLLATE utf32_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf32 COLLATE=utf32_unicode_ci;
-
---
--- Dumping data for table `countries`
---
-
-INSERT INTO `countries` (`id`, `name`, `region`, `flag`, `population`, `language`) VALUES
-(1, 'Georgia', 'Europe', 'https://flagcdn.com/w320/kw.png', '3500000', 'GEO');
 
 --
 -- Indexes for dumped tables
@@ -61,7 +53,7 @@ ALTER TABLE `countries`
 -- AUTO_INCREMENT for table `countries`
 --
 ALTER TABLE `countries`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
